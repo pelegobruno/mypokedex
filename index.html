@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pokedex</title>
+  
+  <!-- Ícone de Pokébola na aba de navegação (Favicon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23ee1515' stroke='%23222224' stroke-width='8'/><path d='M 5 50 A 45 45 0 0 0 95 50 Z' fill='%23f0f0f0'/><line x1='5' y1='50' x2='95' y2='50' stroke='%23222224' stroke-width='8'/><circle cx='50' cy='50' r='14' fill='%23222224'/><circle cx='50' cy='50' r='8' fill='%23ffffff'/></svg>">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="pokedex-header">
+    <div class="camera-lens"></div>
+    <div class="status-lights">
+      <span class="light red"></span>
+      <span class="light yellow"></span>
+      <span class="light green"></span>
+    </div>
+    <h1>pokedex</h1>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Buscar por nome ou ID">
+  </div>
+
+  <main class="pokemon-grid" id="pokemon-grid"></main>
+
+  <!-- Modal com Detalhes do Pokémon -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="close-btn" class="close-btn">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
